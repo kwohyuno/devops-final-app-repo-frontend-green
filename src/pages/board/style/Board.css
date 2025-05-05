@@ -1,0 +1,238 @@
+    .board-header-logo-image{
+        position: absolute;
+        top: 0.8rem;
+        left: 0;
+        width: 22rem;
+        height: 14rem;
+    }
+
+    .board-header-logoutbtn-btn {
+        position: absolute;
+        top: 7.5rem;
+        left: 90rem;
+        width: 13rem;
+
+        background-color: #d53232; /* 다홍색 (혹은 주황색 계열) */
+        color: white;              /* 흰색 글씨 */
+        border: none;              /* 테두리 없음 */
+        padding: 10px 20px;        /* 버튼에 여백 추가 */
+        border-radius: 5px;        /* 모서리를 약간 둥글게 */
+        font-size: 16px;           /* 글자 크기 */
+        cursor: pointer;           /* 마우스 커서를 손가락 모양으로 */
+    }
+
+    .board-header-mypagebtn-btn {
+        position: absolute;
+        top: 7.5rem;
+        left: 75rem;
+        width: 13rem;
+
+        background-color: #cac3c3; /* 다홍색 (혹은 주황색 계열) */
+        color: black;              /* 흰색 글씨 */
+        border: none;              /* 테두리 없음 */
+        padding: 10px 20px;        /* 버튼에 여백 추가 */
+        border-radius: 5px;        /* 모서리를 약간 둥글게 */
+        font-size: 16px;           /* 글자 크기 */
+        cursor: pointer;           /* 마우스 커서를 손가락 모양으로 */
+    }
+
+    .board-header-searchbar-input{
+        position: absolute;
+        top:7.5rem;
+        left: 27rem;
+        width: 33rem;
+        height: 2.3rem;
+        background-color: #f0f0f0; /* 옅은 회색 배경 */
+        color: #4a4a4a; /* 짙은 회색 글씨 */
+        border: 1px solid #f0f0f0; /* 선택적으로 테두리 색상 설정 */
+        border-radius: 4px; /* 선택적으로 둥근 모서리 설정 */
+        text-align: center; /* 글씨 가운데 정렬 */
+        font-size: 18px;
+    }
+
+    .board-header-searchbar-icon{
+        position: absolute;
+        width:3rem;
+        top:7.5rem;
+        left:22rem;
+    }
+
+    .board-header-posticon-btn{
+        position: absolute;
+        top: 7.5rem;
+        left: 62rem;
+        width: 7rem;
+
+        background-color: #e8e4e4; /* 다홍색 (혹은 주황색 계열) */
+        color: black;              /* 흰색 글씨 */
+        border: none;              /* 테두리 없음 */
+        padding: 10px 20px;        /* 버튼에 여백 추가 */
+        border-radius: 5px;        /* 모서리를 약간 둥글게 */
+        font-size: 16px;           /* 글자 크기 */
+        cursor: pointer;           /* 마우스 커서를 손가락 모양으로 */
+
+    }
+
+    .board-header-chaticon{
+        position: absolute;
+        height:2.5rem;
+        width:2.5rem;
+        top:3.7rem;
+        left:35.3rem;
+    }
+
+
+    .board-body{
+        /*background-color: #ffffff; !* 배경색 설정 *!*/
+
+        padding: 10px; /* 패딩 설정 */
+        font-size: 16px; /* 글씨 크기 설정 */
+
+        /* 위치 조정 (예: 절대 위치로 부모 요소의 하단 우측에 배치) */
+        position: absolute;
+        height:80rem;
+        width:70rem;
+        top: 18rem;
+        left:17rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 60px; /* 게시글 간의 간격 */
+
+    }
+
+    .board-body-box{
+        background-color: #f4f3f3;
+        padding: 15px; /* 패딩 설정 */
+        font-size: 16px; /* 글씨 크기 설정 */
+
+        /* 위치 조정 (예: 절대 위치로 부모 요소의 하단 우측에 배치) */
+        /*position: absolute;*/
+        height:100rem;
+        width:64rem;
+        top: 1rem;
+        left:3rem;
+
+        /*border-top: 2px solid #ff0202;*/
+        margin-bottom: 10px;
+    }
+
+    .board-body-box-profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .board-body-box-profile-img{
+        /*position:absolute;*/
+        top:2rem;
+        left:2rem;
+        height:2.5rem;
+        width:3rem;
+    }
+
+    .board-body-box-profile-id{
+        /*position:absolute;*/
+        top:2.5rem;
+        height:2.5rem;
+        width:3rem;
+        /*padding-left:5px;*/
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+
+    .board-body-box-profile-message-popup{
+        display: none; /* 초기에는 숨김 */
+        position: relative;
+        top: 1rem;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        white-space: nowrap;
+        width: 8rem;
+    }
+
+    /* Hover 시 메시지 창 표시 */
+    .board-body-box-profile-id:hover .board-body-box-profile-message-popup {
+        display: block;
+    }
+
+    .board-body-box-profile-writtendate{
+        /*position:absolute;*/
+        top:2.5rem;
+        left:11rem;
+        height:2.5rem;
+        width:10rem;
+        padding-top: 13px;
+        padding-left: 85px;
+    }
+
+
+    .board-body-box-subject{
+        /*position:absolute;*/
+        padding-top: 1px;
+        top:5.5rem;
+        font-size:24px;
+        left:2rem;
+    }
+
+    .board-body-box-contents{
+        /*position:absolute;*/
+        top:8.5rem;
+        font-size:15px;
+        left:2rem;
+        width:43rem;
+        padding-top: 15px;
+        padding-bottom:15px;
+
+    }
+
+    .board-body-pages{
+        /*position:absolute;*/
+        top:47rem;
+        left: 32.5rem;
+        font-size:19px;
+    }
+
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+
+    .modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 500px;
+        width: 100%;
+    }
+
+
+
+    .board-body-box2{
+        background-color: #ffffff;
+        padding: 10px; /* 패딩 설정 */
+        font-size: 16px; /* 글씨 크기 설정 */
+
+        /* 위치 조정 (예: 절대 위치로 부모 요소의 하단 우측에 배치) */
+        position: absolute;
+        height:14rem;
+        width:64rem;
+        top: 19rem;
+        left:3rem;
+
+        /*border-top: 2px solid #ff0202;*/
+    }

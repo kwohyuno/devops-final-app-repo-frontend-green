@@ -1,0 +1,337 @@
+.boarddetail-header-logo-image{
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+    width: 22rem;
+    height: 14rem;
+}
+
+.boarddetail-header-logoutbtn-btn {
+    position: absolute;
+    top: 7.5rem;
+    left: 90rem;
+    width: 13rem;
+
+    background-color: #d53232; /* 다홍색 (혹은 주황색 계열) */
+    color: white;              /* 흰색 글씨 */
+    border: none;              /* 테두리 없음 */
+    padding: 10px 20px;        /* 버튼에 여백 추가 */
+    border-radius: 5px;        /* 모서리를 약간 둥글게 */
+    font-size: 16px;           /* 글자 크기 */
+    cursor: pointer;           /* 마우스 커서를 손가락 모양으로 */
+}
+
+
+.boarddetail-body-box{
+    position:absolute;
+    width:60rem;
+    top: 10rem;
+    left:16rem;
+}
+
+.boarddetail-body-box-profile-img{
+    position:absolute;
+    top:2rem;
+    left:2rem;
+    height:2.5rem;
+    width:3rem;
+}
+
+.boarddetail-body-box-profile-id{
+    position:absolute;
+    top:2.5rem;
+    left:4rem;
+    height:2.5rem;
+    width:3rem;
+}
+
+.boarddetail-body-box-profile-writtentime{
+    position:absolute;
+    top:2.5rem;
+    left:11rem;
+    height:2.5rem;
+    width:10rem;
+}
+
+.boarddetail-body-box-subject{
+    position:absolute;
+    font-size:30px;
+    top:7rem;
+    left:4rem;
+}
+
+.boarddetail-body-box-content{
+    position:absolute;
+    font-size:20px;
+    top:11rem;
+    left:4rem;
+    width: 41rem;
+}
+
+.boarddetail-body-box-btnbox{
+    position:absolute;
+    width:45rem;
+    height:4rem;
+    background-color: #ffffff;
+    top:18rem;
+    display: flex;
+    /*justify-content: space-between;*/
+    padding-left:65px;
+}
+
+.boarddetail-body-box-btnbox-like{
+    position:absolute;
+    height:2rem;
+    width:5rem;
+    top:1rem;
+    background-color: #d3d3d3;
+    left:4rem;
+    text-align:center;
+
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.boarddetail-body-box-btnbox-delete{
+    position:relative;
+    height:2rem;
+    width:5rem;
+    top:1rem;
+    background-color: #d3d3d3;
+    /*left:4rem;*/
+    text-align:center;
+
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.boarddetail-body-box-btnbox-edit{
+    position:relative;
+    height:2rem;
+    width:5rem;
+    top:1rem;
+    background-color: #d3d3d3;
+    /*left:11rem;*/
+    text-align:center;
+
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+    margin-left:15px;
+}
+
+.boarddetail-body-box-btnbox-translate{
+    position:relative;
+    height:2rem;
+    width:9rem;
+    top:1rem;
+    background-color: #d3d3d3;
+    /*left:18rem;*/
+    text-align:center;
+
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+    margin-left:15px;
+}
+
+.boarddetail-body-box-btnbox-dashboard{
+    position:relative;
+    height:2rem;
+    width:9rem;
+    top:1rem;
+    background-color: #d3d3d3;
+    /*left:29rem;*/
+    text-align:center;
+
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+    margin-left:15px;
+}
+
+.boarddetail-body-box-btnbox-comment{
+    position:absolute;
+    height:2rem;
+    width:5rem;
+    top:1rem;
+    background-color: #d3d3d3;
+    left:11rem;
+    text-align:center;
+
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.boarddetail-body-box-btnbox-share{
+    position:absolute;
+    height:2rem;
+    width:5rem;
+    top:1rem;
+    background-color: #d3d3d3;
+    left:18rem;
+    text-align:center;
+
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.boarddetail-body-box-writecomment{
+    position:absolute;
+    height:9rem;
+    width:50rem;
+    top:24rem;
+    left:3.7rem;
+    background-color: #ffffff;
+    font-size:20px;
+    border-color: #dad9d9;
+    border-radius: 17px;
+    padding-left: 10px;
+}
+
+.boarddetail-body-box-postcomment{
+    position:absolute;
+    background-color:seagreen;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    width:4.5rem;
+    height:2rem;
+    top:35rem;
+    left:50rem;
+    font-size:17px;
+}
+
+.boarddetail-body-box-commentbox-comments{
+    position:relative;
+
+}
+
+.boarddetail-body-box-commentbox-commentsign{
+    position:absolute;
+    font-size:17px;
+    color: #888888;
+    top: 38rem;
+    left: 4rem;
+}
+
+.boarddetail-body-box-commentbox-commentsignline{
+    position:absolute;
+    height:0.1rem;
+    width:45rem;
+    background-color: #acabab;
+    top:38.6rem;
+    left:10rem;
+}
+
+.boarddetail-body-box-commentbox-comments-comment{
+    position:relative;
+    width:52rem;
+    height:8rem;
+    /*background-color: #acabab;*/
+    top:40.6rem;
+    left:3rem;
+    border-bottom:1px solid #dad9d9;
+    background-color: #e8e8e8;
+    padding-bottom: 15px;
+    margin-bottom:15px;
+}
+
+.boarddetail-body-box-commentbox-comments-comment-header{
+    position:absolute;
+    width:30rem;
+    height:3rem;
+    /*background-color: #e1dbdb;*/
+    left:1rem;
+}
+
+.boarddetail-body-box-comments-comments-comment-header-profilepic{
+    position:absolute;
+}
+
+.boarddetail-body-box-comments-comments-comment-header-profilepic-img{
+    position:absolute;
+    width:3rem;
+    height:2.5rem;
+}
+
+.boarddetail-body-box-comments-comments-comment-header-id{
+    position:absolute;
+    left: 1rem;
+    top:0.8rem;
+}
+
+.boarddetail-body-box-comments-comments-comment-header-id-popup{
+    display: none; /* 초기에는 숨김 */
+    position: relative;
+    top: 1rem;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    width: 8rem;
+}
+
+.boarddetail-body-box-comments-comments-comment-header-id:hover .boarddetail-body-box-comments-comments-comment-header-id-popup {
+    display: block;
+}
+
+.boarddetail-body-box-comments-comments-comment-header-writtentime{
+    position:absolute;
+    left:11rem;
+    top:0.8rem;
+    color:gray;
+}
+
+.boarddetail-body-box-commentbox-comments-comment-content{
+    position:absolute;
+    top:4rem;
+    left: 2rem;
+}
+
+.boarddetail-body-box-comments-comments-comment-like-btn{
+    position:absolute;
+    width:5rem;
+    height:2rem;
+    background-color: #cacaca;
+    top:6rem;
+    left:5rem;
+    text-align:center;
+    border-radius:5px;
+
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+
+.boarddetail-body-box-commentbox-comments-comment-deletebtn{
+    position:relative;
+    height:2rem;
+    width:5rem;
+    top:6rem;
+    background-color: #d3d3d3;
+    /*left:4rem;*/
+    text-align:center;
+    margin-left:46rem;
+    margin-bottom:2rem;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+
+

@@ -1,0 +1,151 @@
+.boardform-header-logo-image{
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+    width: 22rem;
+    height: 14rem;
+}
+
+.boardform-header-logoutbtn-btn {
+    position: absolute;
+    top: 7.5rem;
+    left: 90rem;
+    width: 13rem;
+
+    background-color: #d53232; /* 다홍색 (혹은 주황색 계열) */
+    color: white;              /* 흰색 글씨 */
+    border: none;              /* 테두리 없음 */
+    padding: 10px 20px;        /* 버튼에 여백 추가 */
+    border-radius: 5px;        /* 모서리를 약간 둥글게 */
+    font-size: 16px;           /* 글자 크기 */
+    cursor: pointer;           /* 마우스 커서를 손가락 모양으로 */
+}
+
+.boardform-header-mypagebtn-btn {
+    position: absolute;
+    top: 7.5rem;
+    left: 75rem;
+    width: 13rem;
+
+    background-color: #cac3c3; /* 다홍색 (혹은 주황색 계열) */
+    color: black;              /* 흰색 글씨 */
+    border: none;              /* 테두리 없음 */
+    padding: 10px 20px;        /* 버튼에 여백 추가 */
+    border-radius: 5px;        /* 모서리를 약간 둥글게 */
+    font-size: 16px;           /* 글자 크기 */
+    cursor: pointer;           /* 마우스 커서를 손가락 모양으로 */
+}
+
+.boardform-header-searchbar-input{
+    position: absolute;
+    top:7.5rem;
+    left: 27rem;
+    width: 33rem;
+    height: 2.3rem;
+    background-color: #f0f0f0; /* 옅은 회색 배경 */
+    color: #4a4a4a; /* 짙은 회색 글씨 */
+    border: 1px solid #f0f0f0; /* 선택적으로 테두리 색상 설정 */
+    border-radius: 4px; /* 선택적으로 둥근 모서리 설정 */
+    text-align: center; /* 글씨 가운데 정렬 */
+    font-size: 18px;
+}
+
+.boardform-header-searchbar-icon{
+    position: absolute;
+    width:3rem;
+    top:7.5rem;
+    left:22rem;
+}
+
+.boardform-header-posticon-btn{
+    position: absolute;
+    top: 7.5rem;
+    left: 62rem;
+    width: 7rem;
+
+    background-color: #e8e4e4; /* 다홍색 (혹은 주황색 계열) */
+    color: black;              /* 흰색 글씨 */
+    border: none;              /* 테두리 없음 */
+    padding: 10px 20px;        /* 버튼에 여백 추가 */
+    border-radius: 5px;        /* 모서리를 약간 둥글게 */
+    font-size: 16px;           /* 글자 크기 */
+    cursor: pointer;           /* 마우스 커서를 손가락 모양으로 */
+
+}
+
+.boardform-header-chaticon{
+    position: absolute;
+    height:2.5rem;
+    width:2.5rem;
+    top:3.7rem;
+    left:35.3rem;
+}
+
+.boardform-body{
+    background-color: #f3f3f3; /* 배경색 설정 */
+    padding: 10px; /* 패딩 설정 */
+    font-size: 16px; /* 글씨 크기 설정 */
+
+    /* 위치 조정 (예: 절대 위치로 부모 요소의 하단 우측에 배치) */
+    position: absolute;
+    height:50rem;
+    width:70rem;
+    top: 16rem;
+    left:17rem;
+}
+
+.board-body-title-input{
+    position: absolute;
+    height:4rem;
+    width: 62rem;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    left:2rem;
+    padding-left: 2rem;
+    border-color: #9c9b9b;
+}
+
+.board-body-body-input{
+    position: absolute;
+    height:16rem;
+    width: 62rem;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    left:2rem;
+    padding-left: 2rem;
+    top: 7rem;
+    border-color: #9c9b9b;
+    text-align: match-parent;
+    padding-top: 0; /* 위쪽 패딩을 없앰 */
+}
+
+.boardform-body-btn-cancelbtn{
+    position: absolute;
+    top: 30rem;
+    left: 44rem;
+    width: 10rem;
+
+    background-color: #cdcdcd; /* 다홍색 (혹은 주황색 계열) */
+    color: #474747;              /* 흰색 글씨 */
+    border: none;              /* 테두리 없음 */
+    padding: 10px 20px;        /* 버튼에 여백 추가 */
+    border-radius: 5px;        /* 모서리를 약간 둥글게 */
+    font-size: 16px;           /* 글자 크기 */
+    cursor: pointer;           /* 마우스 커서를 손가락 모양으로 */
+}
+
+.boardform-body-btn-postbtn{
+    position: absolute;
+    top: 30rem;
+    left: 56rem;
+    width: 10rem;
+
+    background-color: #cdcdcd; /* 다홍색 (혹은 주황색 계열) */
+    color: #474747;              /* 흰색 글씨 */
+    border: none;              /* 테두리 없음 */
+    padding: 10px 20px;        /* 버튼에 여백 추가 */
+    border-radius: 5px;        /* 모서리를 약간 둥글게 */
+    font-size: 16px;           /* 글자 크기 */
+    cursor: pointer;           /* 마우스 커서를 손가락 모양으로 */
+}
+

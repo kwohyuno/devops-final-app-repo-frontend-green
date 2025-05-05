@@ -1,0 +1,66 @@
+.login-green{
+    position:absolute;
+    top: 5rem;
+    left: 0rem;
+    width: 40rem;
+    height: 30rem;
+    background-color:green;
+    color:white;
+    font-size: 50px;
+}
+
+.header-icon{
+    position: absolute;
+    top: 10rem;
+    left: -22rem;
+    width: 22rem;
+    height: 14rem;
+}
+
+.login-image{
+    position: absolute;
+    top: 15rem;
+    left: 0.1rem;
+    width:40rem;
+    height:45rem;
+
+}
+
+.login-form{
+    position: absolute;
+    top: 15rem;
+    left: 60rem;
+}
+
+
+.login-form-id{
+    position: absolute;
+    top: 15rem;
+    left: -3rem;
+    height:1.7rem;
+}
+
+.login-form-password{
+    position: absolute;
+    top: 18rem;
+    left: -3rem;
+    height:1.7rem;
+}
+
+.login-form-button{
+    position: absolute;
+    top: 15rem;
+    left: 9rem;
+    height: 5rem;
+}
+
+.login-form-signup{
+    position: absolute;
+    top : 21rem;
+    width:30rem;
+    font-size:13px;
+    left:-3rem;
+    color: blue;
+    text-decoration: underline;
+}
+
