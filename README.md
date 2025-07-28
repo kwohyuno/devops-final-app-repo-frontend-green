@@ -1,70 +1,184 @@
-# Getting Started with Create React App
+# DevOps Final App - Frontend (Green Team)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React-based frontend application built with Material-UI for a comprehensive web application with user authentication, board management, messaging, and user profile features.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **User Authentication**: Login and signup functionality
+- **Board Management**: Create, read, update, and delete board posts
+- **User Profile**: Personal page with user information
+- **Messaging System**: Internal messaging functionality
+- **Responsive Design**: Built with Material-UI for modern, responsive UI
+- **Docker Support**: Containerized deployment with Nginx
+- **CI/CD Pipeline**: Automated build and deployment with GitHub Actions
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend Framework**: React 18.3.1
+- **UI Library**: Material-UI (MUI) v6.1.3
+- **Routing**: React Router DOM v6.26.2
+- **HTTP Client**: Axios v1.7.7
+- **AI Integration**: OpenAI v4.67.3
+- **Build Tool**: Create React App
+- **Container**: Docker with Nginx
+- **CI/CD**: GitHub Actions with AWS ECR
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+```
+src/
+├── assets/           # Static assets
+├── containers/       # Main App component
+├── pages/           # Page components
+│   ├── board/       # Board management pages
+│   ├── login/       # Authentication pages
+│   ├── message/     # Messaging functionality
+│   ├── mypage/      # User profile pages
+│   └── signup/      # User registration
+├── router/          # Routing configuration
+├── setupProxy.js    # Development proxy configuration
+└── index.js         # Application entry point
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js 14 or higher
+- npm or yarn
+- Docker (for containerized deployment)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Local Development
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/kwohyuno/devops-final-app-repo-frontend-green.git
+   cd devops-final-app-repo-frontend-green
+   ```
 
-### `npm run eject`
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Start development server**
+   ```bash
+   npm start
+   ```
+   The application will be available at `http://localhost:3000`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Run tests**
+   ```bash
+   npm test
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🐳 Docker Deployment
 
-## Learn More
+### Build Docker Image
+```bash
+docker build -t frontend-app .
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Run Docker Container
+```bash
+docker run -p 80:80 frontend-app
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application will be available at `http://localhost:80`
 
-### Code Splitting
+## 🔧 Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Environment Setup
 
-### Analyzing the Bundle Size
+The application uses proxy configuration for development:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **API Endpoint**: `http://localhost:8080` (via `/api` route)
+- **Signup API**: `http://localhost:8081` (via `/api2` route)
 
-### Making a Progressive Web App
+### Nginx Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The production deployment uses Nginx with the following configuration:
+- Serves static files from `/usr/share/nginx/html`
+- Proxies API requests to backend services
+- Handles CORS headers
+- Supports SPA routing with fallback to `index.html`
 
-### Advanced Configuration
+## 🔄 CI/CD Pipeline
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The project includes GitHub Actions workflow for automated deployment:
 
-### Deployment
+- **Trigger**: Push to `main` branch
+- **Build**: Docker image build
+- **Deploy**: Push to AWS ECR
+- **Environment**: AWS ECR with ECS deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Required Secrets
 
-### `npm run build` fails to minify
+The following secrets must be configured in GitHub:
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
+- `AWS_SESSION_TOKEN`
+- `AWS_ECR_URL`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📱 Application Routes
+
+- `/` - Login page (default)
+- `/login` - User authentication
+- `/signup` - User registration
+- `/board` - Board listing
+- `/board/form` - Create new board post
+- `/board/detail/:boardId` - View board post details
+- `/board/updateform/:boardId` - Edit board post
+- `/mypage` - User profile page
+- `/message` - Messaging system
+
+## 🧪 Testing
+
+Run the test suite:
+```bash
+npm test
+```
+
+Run tests in watch mode:
+```bash
+npm test -- --watch
+```
+
+## 📦 Build
+
+Create a production build:
+```bash
+npm run build
+```
+
+The build artifacts will be stored in the `build/` directory.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is part of the DevOps Final Application repository.
+
+## 👥 Team
+
+Green Team - DevOps Final Project
+
+## 🔗 Related Repositories
+
+- Backend API services (referenced in proxy configuration)
+- Infrastructure and deployment configurations
+
+---
+
+For more information about the project structure and deployment, please refer to the individual component documentation.
